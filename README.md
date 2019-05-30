@@ -14,7 +14,7 @@ After Angular 2 came out, I rewrote everything, and upgraded again when Angular 
 
 The write pane has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done with those three).  Also, the weather and current date are inserted into every new blog post.
 
-When I choose an image to insert from my computer, it hits my Node.js server that uploads it to a folder and then serves it up locally.  That way I always have the images if I move them on my computer.
+When I choose an image to insert from my computer, it hits the Node.js server that uploads it to a folder and then serves it up locally.  That way I always have the images if I move them on my computer.
 
 When I insert a YouTube link, the Node.js server makes a call to my Google YouTube API that grabs the title and a thumbnail image.  It inserts that as a hyperlink.  I tried using an iframe, but it reloads every time I type anything in the edit pane and gets on my nerves.  
 
