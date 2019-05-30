@@ -45,8 +45,7 @@ After pasting the YouTube url in the top box, click on the YouTube button and it
 Once you're satisfied with the info and all of the fields are populated, click download and it will hit the Node.js server, use the youtube-dl library, and will download the video and convert it to MP3. 
 
 The get and set tags is a work in progress.  It uses the node-id3 library to read and write ID3 tags to the file that was just saved.  
-
-![YouTube Download](https://user-images.githubusercontent.com/11249870/58663625-bf491100-82e1-11e9-8cd1-e69dee043068.JPG)
+![YouTube Download](https://user-images.githubusercontent.com/11249870/58671066-1fe24900-82f6-11e9-9c86-1e3aca226f03.JPG)
 
 **Note:  This will not work out of the box.  There are API calls to retrieve YouTube video information, and Elasticsearch needs to be running with an index available.  I'm using journal as an index.  The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.   The constant ytPassword in journal_server/src/routes/youTubeInfo.ts pulls the password from "YT" environment variable you must set on your machine.  You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
 
