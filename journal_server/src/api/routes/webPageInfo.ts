@@ -8,7 +8,6 @@ const cheerio = require('cheerio');
 const router = express.Router();
 
 router.post('/', (req: Request, res: Response) => {
-    // console.log('req.body.url' + req.body.url);
     if(req.body.url){
         request(req.body.url, function (error: Error, response: Response, body: any) {
             if (!error && response.statusCode == 200) {
@@ -20,7 +19,6 @@ router.post('/', (req: Request, res: Response) => {
                     title: webpageTitle,
                         metaDescription: metaDescription
                 }
-                // res.send(JSON.stringify(webpage));
                 res.status(200).json({
                     title: webpageTitle,
                     metaDescription: metaDescription
