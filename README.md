@@ -1,14 +1,14 @@
 ## Welcome to my journal project!
 
-This is a labor of love, and is used as a way for me to have a private journal that exists nowhere else but my own computer.
+This is a labor of love, and is used as a way for me to have a private journal that exists nowhere else but my own computer.  I can save and comment on YouTube videos, pictures I've taken, and articles I've read.
 
-The project started out on a Jekyll blog template.  I would write the journal entries in Sublime text with "front matter" that included the title, date, and category of the blog post.  Then I would save it in the posts folder.  It would be compiled as static content and served up with the jekyll serve command.
+The project started out on a Jekyll blog template.  I would write journal entries in Sublime text with "front matter" that included the title, date, and category of the blog post.  Then I would save it in the posts folder.  It would be compiled as static content and served up with the jekyll serve command.
 
 That got me in the habit of writing and keeping a journal, but I soon wanted more control and a better way to enter, edit, and read posts.
 
 Somewhere around that time I came across Angular JS and I loved it!  I started small with a read and write pane and slowly added features.  
 
-After Angular 2 came out, I rewrote everything, and I upgraded again when Angular 5 came out.  I'm using Bootstrap for style and functionality.
+After Angular 2 came out, I rewrote everything, and upgraded again when Angular 5 came out.  I'm using Bootstrap for style and functionality.
 
 ## Write
 
