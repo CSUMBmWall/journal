@@ -12,7 +12,7 @@ After Angular 2 came out, I rewrote everything, and upgraded again when Angular 
 
 ## Write
 
-The write pane has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done with those three).  Also, the weather and current date are inserted into every new blog post.
+The write pane accepts Markdown and has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done with those three).  Also, the weather and current date are inserted into every new blog post.
 
 When I choose an image to insert from my computer, it hits the Node.js server that uploads it to a folder and then serves it up locally.  That way I always have the images if I move them on my computer.
 
