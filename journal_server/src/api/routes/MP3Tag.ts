@@ -10,8 +10,6 @@ const NodeID3 = require('node-id3');
 const fs = require('fs');
 const path = require('path');
 
-let file = "D:\\Music\\Aretha Franklin - YouTube -  Do Right Woman Do Right Man.mp3";
-
 // Get file info
 router.post('/read', (req: Request, res: Response) => {
     const fileLoc = req.body.fileLoc;
