@@ -36,7 +36,7 @@ A Show List button appears at the top of the formatted page to return to the lis
 
 ## YouTube download
 
-As a final feature, I added the ability to download YouTube videos.  This still needs some polish, but the general functionality works.  
+I also added the ability to download YouTube videos and convert them to MP3.  This still needs some polish, but the general functionality works.  
 
 After pasting the YouTube url in the top box, click on the YouTube button and it will retrieve the info from YouTube, including the thumbnail image.  I tried to use the description and title from YouTube to separate phrases that could be the artist, title, album, and description, but the inputs from people are very different and it's hard to get a one size fits all recipe for this.  These different phrases are available in the dropdowns to populate the fields and are editable also.
 
@@ -46,5 +46,5 @@ The get and set tags is a work in progress.  It uses the node-id3 library to rea
 
 ![YouTube Download](https://user-images.githubusercontent.com/11249870/58663625-bf491100-82e1-11e9-8cd1-e69dee043068.JPG)
 
-**Note:  You must have an Elasticsearch database with an index set up for this to work.  I haven't tried to start from scratch with a fresh Elasticsearch index, so you would need to test it out.**
+**Note:  This will not work out of the box.  There are API calls to retrieve YouTube video information and Elasticsearch needs to be running with an index available.  You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/getting-started) **
 
