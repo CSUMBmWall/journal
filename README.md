@@ -46,5 +46,5 @@ The get and set tags is a work in progress.  It uses the node-id3 library to rea
 
 ![YouTube Download](https://user-images.githubusercontent.com/11249870/58663625-bf491100-82e1-11e9-8cd1-e69dee043068.JPG)
 
-**Note:  This will not work out of the box.  There are API calls to retrieve YouTube video information and Elasticsearch needs to be running with an index available.  The Node.js server must be running to add images, retrieve URL info, retrieve YouTube info, or download YouTube videos.  You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
+**Note:  This will not work out of the box.  There are API calls to retrieve YouTube video information and Elasticsearch needs to be running with an index available.  The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
 
