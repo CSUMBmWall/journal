@@ -26,9 +26,11 @@ The insert URL also hits the Node.js server to grab the title of the page using 
 
 The read pane has two layouts.  The first has a list of posts on the left with a paginator at the bottom.  There is also a search box to find text in any post, a bookmarked toggle to select only bookmarked posts, a sort date that will reverse sort, and an alternate view that shows the posts on square cards instead of a list (that still needs some attention).  
 
-There are Edit Post, Delete, and bookmark buttons on the top of the post.  If you click Edit Post, the edit pane will appear on the left where you can edit and update the post.  
+
 
 ![Read Screen 1](https://user-images.githubusercontent.com/11249870/58662255-9d01c400-82de-11e9-8569-2c7b53f6f6e7.JPG)
+
+There are Edit Post, Delete, and bookmark buttons on the top of the post.  If you click Edit Post, the edit pane will appear on the left where you can edit and update the post.  
 
 A Show List button appears at the top of the formatted page to return to the list after editing.  
 
