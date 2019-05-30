@@ -1,0 +1,8 @@
+journal_main/src/assets/images
+journal_main/src/assets/misc
+journal_main/.idea
+journal_main/node_modules
+journal_server/.idea
+journal_server/imageUploads
+journal_server/node_modules
+journal_server/dist

@@ -1,0 +1,30 @@
+<div class="col-xs-12">
+    <div *ngIf="selectedPost; else infoText" >
+      <ul class="list-group" >
+       <!-- <div class="row">-->
+          <li class="list-group-item row no-border">
+            <button class="btn blue-button" (click)="onHideList()">
+              <div *ngIf="!listIsHidden">
+                <span class="glyphicon glyphicon-chevron-left"></span>Edit Post
+              </div>
+              <div *ngIf="listIsHidden">
+                <span class="glyphicon glyphicon-chevron-right"></span>Show List
+              </div>
+              </button>
+            <button *ngIf="!listIsHidden" class="btn-danger btn" (click)="onDeletePost(selectedPost)">Delete</button>
+            <button class="btn"
+                    [ngClass]="{'bookmark': selectedPost._source.bookmarked,
+                    'btn-default': !selectedPost._source.bookmarked}"
+                    (click)="onBookmarkPost(selectedPost)">
+                <span class="glyphicon glyphicon-bookmark"></span>
+            </button>
+          </li>
+      <li class="list-group-item row no-border" style="padding-bottom: 0"> <h2>{{ selectedPost._source.title }}</h2></li>
+      <li class="list-group-item row no-border" style="padding-top: 0"> <h5>{{ selectedPost._source.date | date: 'MMMM d, y HH:mm a' }}</h5></li>
+      <li class="list-group-item row no-border" wrap="virtual"><div style="overflow: scroll;height:600px;"[innerHTML]="selectedPost._source.body | markdownPipe"></div></li>
+        </ul></div>
+    <ng-template #infoText>
+      <p>Please select a Post!</p>
+    </ng-template>
+</div>
+

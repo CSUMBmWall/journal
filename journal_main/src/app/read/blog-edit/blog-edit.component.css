@@ -1,0 +1,132 @@
+.btn-primary {
+  background-color: #233355;
+}
+.mainBackground {
+  background-color: #607b7d;
+  height: 100vh;
+}
+.postBlocks {
+  padding-top: 15px;
+}
+
+#markDownArea {
+  padding-left: 15px;
+}
+
+.typeAndIndexEntry {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.entryRowItems {
+  background-color: #c0c5c1;
+}
+
+.white-stripe-bkgrnd {
+  background: repeating-linear-gradient(
+    to right,
+    #c3c3c3,
+    #e2e2e2 1%,
+    #e2e2e2 10px,
+    #e2e2e2 10px
+  );
+}
+
+.main-div {
+  height:100vh;
+  background: white;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.display-container {
+  height: 100vh;
+  overflow: auto;
+
+}
+
+#write-container {
+  border-right: 5px solid #333;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-border {
+  border: none;
+  border-width: 0;
+}
+
+.no-padding {
+  padding: 0;
+
+
+}
+
+.write-title-date {
+  border: none;
+  border-width: 0;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+#write-date {
+  padding-top: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-input-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+
+.utility--row {
+  border-bottom: #243355 5px solid;
+}
+
+.utility--input {
+  font-size: 14px;
+}
+
+.insertTabsInput {
+  width: 90%;
+  font-size: 14px;
+}
+
+.insertTabsButton {
+  width: 9%;
+}
+
+.insertTabs {
+  display: inline-block;
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: none;
+}
+
+.insert-links {
+  background-color: whitesmoke;
+}
+
+li.active>a{
+  color: #ffc107;
+}
+
+.update-delete {
+  margin-top: 3px;
+  margin-right: 3px;
+}

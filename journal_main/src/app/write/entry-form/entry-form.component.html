@@ -1,0 +1,107 @@
+<div class="container-fluid main-div">
+  <div class="col-xs-7 display-container" id="write-container">
+    <form (ngSubmit)="onSavePost(f)" #f="ngForm">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Nav tabs --><div class="card">
+          <ul class="nav nav-tabs" role="tablist">
+            <!--<li role="presentation" class="active"><a href="#index" aria-controls="index" role="tab" data-toggle="tab">Index</a></li>-->
+            <li role="presentation" class="active"><a href="#image" aria-controls="image" role="tab" data-toggle="tab">Image</a></li>
+            <li role="presentation"><a href="#youtube" aria-controls="youtube" role="tab" data-toggle="tab">YouTube</a></li>
+            <li role="presentation"><a href="#link" aria-controls="link" role="tab" data-toggle="tab">Link</a></li>
+            <li role="presentation"><a href="#htmltext" aria-controls="htmltext" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation" class="pull-right update-delete">
+              <!--<div class="container">-->
+              <button class="btn-primary btn" [disabled]="!f.valid || title.pristine"
+                      type="submit">Save</button>
+              <button class="btn-danger btn" type="button" (click)="onClearPost()">Clear</button>
+              <!-- </div>-->
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!--<div role="tabpanel" class="tab-pane active" id="index" ><input class="insertTabs text-center insertTabsInput" [(ngModel)]="post.index" name="index" type="text"></div>-->
+            <div role="tabpanel" class="tab-pane active" id="image" >
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertImageLink()">Insert</button>
+              <input class="insertTabs text-center insertTabsInput" name="image" type="file" #image (change)="onFileSelected($event)">
+            </div>
+            <div role="tabpanel" class="tab-pane" id="youtube">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertYouTubeLink()" [disabled]="youTubeID==''">Insert</button>
+              <input class="insertTabs insertTabsInput" name="youTubeID" placeholder="YouTube Link"  [(ngModel)]="youTubeID">
+            </div>
+            <div role="tabpanel" class="tab-pane" id="link">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertAnchor(link)">Insert</button>
+              <input class="insertTabs insertTabsInput" name="link" placeholder="URL Link" #link>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="htmltext">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertHTML(htmltext)">Insert</button>
+              <input class="insertTabs insertTabsInput" name="htmltext" placeholder="HTML" #htmltext>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4>
+          <input class="formControl text-center entryForm__title--input" [(ngModel)]="post.body.title" name="title" ngModel #title="ngModel" type="text">
+        </h4>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker1" [(ngModel)]="post.body.date" name="date">
+            <!--{{post.body.date | date: 'HH:mm a'}}-->
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+      </div>
+        <div class="col-xs-6">
+          <span class="weather">
+            Weather is {{weather.temp | number: '1.0-0'}}&#176; F with {{post.body.weather.weather_type_description | lowercase}}</span>
+        </div>
+      </div>
+
+      <div class="row input__body">
+          <textarea class="form-control full-width" aria-label="With textarea" rows="25" cols="120" required
+                    [(ngModel)]="post.body.body"
+                    name="body"
+                    ngModel
+                    #body="ngModel">
+          </textarea>
+      </div>
+
+    </form>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-3 text-center">
+        <span *ngIf="saveStatus.length >= 1">{{ saveStatus }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-5 display-container" >
+    <ul class="list-group">
+      <li class="list-group-item text-center no-border no-padding">
+        <h2 class="text-center">{{post.body.title}}</h2>
+      </li>
+      <li class="text-center no-border list-group-item" >
+        <h4 class="text-center">{{post.body.date | date: 'MMMM d, y HH:mm a'}}</h4>
+        <span>Weather is {{weather.temp | number: '1.0-0'}}&#176; F with {{post.body.weather.weather_type_description | lowercase}}</span>
+      </li>
+      <!--<li class="text-center no-border list-group-item" >
+        <div class="text-center no-margin">
+          Weather is {{weather.temp | number: '1.0-0'}}&#176; F with {{post.body.weather.weather_type_description | lowercase}}
+          </div>
+      </li>-->
+      <li class="list-group-item no-border">
+        <div class="input-group">
+          <div style="overflow: auto;" [innerHTML]="post.body.body | markdownPipe"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+

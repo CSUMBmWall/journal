@@ -1,0 +1,202 @@
+<!--<div class="swiper-container">
+  &lt;!&ndash; Additional required wrapper &ndash;&gt;
+  <div class="swiper-wrapper">
+    &lt;!&ndash; Slides &ndash;&gt;
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  &lt;!&ndash; If we need pagination &ndash;&gt;
+  <div class="swiper-pagination"></div>
+
+  &lt;!&ndash; If we need navigation buttons &ndash;&gt;
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  &lt;!&ndash; If we need scrollbar &ndash;&gt;
+  <div class="swiper-scrollbar"></div>
+</div>
+
+-->
+
+<div class="col-md-6">
+  <slideshow
+    [minHeight]="'400px'"
+    [autoPlay]="true"
+    [showArrows]="true"
+    [imageUrls]="images"
+    [lazyLoad]="images?.length > 1"
+    [autoPlayWaitForLazyLoad]="true"
+    [showDots]="true"
+  >
+  </slideshow>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="container-fluid main-div">
+  <div class="col-xs-7 display-container" id="write-container">
+    <form (ngSubmit)="onSavePost(f)" #f="ngForm">
+      &lt;!&ndash;<div class="row utility&#45;&#45;row">
+        <div class="col-xs-5">
+          <h4><input class="formControl text-center utility&#45;&#45;input" [(ngModel)]="post.index" name="index" type="text"></h4>
+        </div>
+        <div class="input__links">
+          <div class="col-xs-1">
+            <button class="btn btn-primary" type="button" (click)="insertImageLink()">Image</button>
+          </div>
+          <div class="col-xs-6">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" (click)="insertYouTubeLink()" [disabled]="youTubeID==''">YouTube</button>
+              </span>
+              <input class="formControl" name="youTubeID" placeholder="YouTube Link"  [(ngModel)]="youTubeID">
+            </div>
+          </div>
+        </div>
+      </div> &ndash;&gt;
+      <div class="row">
+        <div class="col-md-12">
+          &lt;!&ndash; Nav tabs &ndash;&gt;<div class="card">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#index" aria-controls="index" role="tab" data-toggle="tab">Index</a></li>
+            <li role="presentation"><a href="#image" aria-controls="image" role="tab" data-toggle="tab">Image</a></li>
+            <li role="presentation"><a href="#youtube" aria-controls="youtube" role="tab" data-toggle="tab">YouTube</a></li>
+            <li role="presentation"><a href="#link" aria-controls="link" role="tab" data-toggle="tab">Link</a></li>
+          </ul>
+
+          &lt;!&ndash; Tab panes &ndash;&gt;
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="index"><input class="insertTabs text-center insertTabsInput" [(ngModel)]="post.index" name="index" type="text"></div>
+            <div role="tabpanel" class="tab-pane" id="image">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertImageLink(image)">Image</button>
+              <input class="insertTabs text-center insertTabsInput" name="image" type="file" #image>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="youtube">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertYouTubeLink()" [disabled]="youTubeID==''">YouTube</button>
+              <input class="insertTabs insertTabsInput" name="youTubeID" placeholder="YouTube Link"  [(ngModel)]="youTubeID">
+            </div>
+            <div role="tabpanel" class="tab-pane" id="link">
+              <button class="btn btn-primary btn-sm insertTabsButton" type="button" (click)="insertAnchor(link)" >Anchor</button>
+              <input class="insertTabs insertTabsInput" name="link" placeholder="URL Link" #link>
+              &lt;!&ndash;<div class="input-group">
+              <span class="input-group-btn input-addon">
+               &lt;!&ndash;<button class="btn btn-primary form-control" type="button" (click)="setTags()"
+                       [disabled]="!f.valid">Set Tags</button>&ndash;&gt;
+              </span>
+                <input type="text" class="form-control download-status" placeholder="Status" aria-describedby="status" disabled="disabled" [ngModel]="dlStatus" name="dlStatus">
+              </div>&ndash;&gt;
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      <div class="row">
+          <h4>
+          <input class="formControl text-center entryForm__title&#45;&#45;input" [(ngModel)]="post.body.title" name="title" ngModel #title="ngModel" type="text">
+        </h4>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <input class="formControl input__date text-center"
+                   [ngModel]="post.body.date | date: 'MMMM d, y HH:mm a'"
+                   (ngModelChange)="post.body.date=$event"
+                   ngModel
+                   name="date"
+                   #date="ngModel"
+            >
+        </div>
+      </div>
+    &lt;!&ndash;  <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+        <input class="formControl input__date text-center"
+               [ngModel]="post.body.date | date:'mm/dd/yyyy'" (ngModelChange)="post.body.date=$event"
+               name="date"
+               type="date"
+        >
+          {{ post.body.date }}
+      </div>
+       &lt;!&ndash; <div class="col-xs-4">
+        &lt;!&ndash;<input class="formControl input__date text-center"
+               [ngModel]="post.body.date | date: 'MMMM d, y HH:mm a'"
+               (ngModelChange)="post.body.date=$event"
+               ngModel
+               name="date"
+               #date="ngModel"
+        >&ndash;&gt;
+      </div>&ndash;&gt;
+      </div>&ndash;&gt;
+      <div class="row input__body">
+          <textarea class="form-control full-width" aria-label="With textarea" rows="25" cols="120" required
+                    [(ngModel)]="post.body.body"
+                    name="body"
+                    ngModel
+                    #body="ngModel">
+          </textarea>
+      </div>
+      <div class="row">
+        <div class="col-xs-1 col-xs-offset-5">
+          <button class="btn btn-primary"
+                  [disabled]="!f.valid || title.pristine"
+                  type="submit">Save</button>
+        </div>
+        <div class="col-xs-1 ">
+          <button class="btn btn-danger" type="button" (click)="onClearPost()">Clear</button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-3 text-center">
+        <span *ngIf="saveStatus.length >= 1">{{ saveStatus }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-5 display-container" >
+    <ul class="list-group">
+      <li class="list-group-item text-center no-border no-padding">
+        <h2 class="text-center">{{post.body.title}}</h2>
+      </li>
+      <li class="list-group-item text-center no-border" >
+        <h4 class="text-center">{{post.body.date | date: 'MMMM d, y HH:mm a'}}</h4>
+      </li>
+      <li class="list-group-item no-border">
+        <div class="input-group">
+          <div style="overflow: auto;" [innerHTML]="post.body.body | markdownPipe"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+-->

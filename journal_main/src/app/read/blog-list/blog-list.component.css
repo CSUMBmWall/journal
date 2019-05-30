@@ -1,0 +1,23 @@
+app-blog-item.active > a > list-group-item {
+  background-color:#123456 !important;
+  color: white;
+}
+
+.mat-sort-header-container {
+  align-items: center;
+}
+
+.equal, .equal > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex:1 1 auto;
+}
+
+.paginate {
+  padding-top: 10px;
+}
+
+

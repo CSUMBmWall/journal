@@ -1,0 +1,31 @@
+<div *ngIf="layout=='list'" [ngClass]="getBackgroundImg(i)" >
+  <!--<a [ngStyle]="{backgroundColor: getColor()}" class="list-group-item clearfix" (click)="onSelected(i)">-->
+  <a class="list-group-item clearfix"
+     (click)="onSelected(i)" style="background-image: inherit">
+    <div class="row">
+      <div class="col-xs-6 text-left" >
+        <h4 class="list-group-item-heading">{{post._source.title}}</h4>
+       </div>
+      <div class="col-xs-1 text-right">
+        <span *ngIf="post._source.bookmarked"  class="glyphicon glyphicon-bookmark" style="color: #2660A4"></span>
+      </div>
+      <div class="col-xs-5 text-right">
+        <p>{{ post._source.date | date: 'shortDate' }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="col-xs-12" >{{ post._source.body | slice:0:120}}</p>
+    </div>
+  </a>
+</div>
+<div class="col-xs-4 list-group" *ngIf="layout=='grid'" [ngClass]="getBackgroundImg(i)">
+  <!--<a [ngStyle]="{backgroundColor: getColor()}" class="list-group-item clearfix" (click)="onSelected(i)" style="max-height: 185px;min-height: 185px;">-->
+  <a class="list-group-item clearfix" (click)="onSelected(i)" style="max-height: 185px;min-height: 185px;background-image: inherit" >
+    <div class="row text-center" style="background-image: inherit"><em class="list-group-item-heading"><b>{{post._source.title}}</b></em>
+      <span *ngIf="post._source.bookmarked" class="glyphicon glyphicon-bookmark" style="color: #2660A4"></span>
+    </div>
+    <div class="row" style="padding:10px;background-image: inherit">
+      <p class="list-group-item-text" ><b>{{ post._source.date | date: 'shortDate' }}:</b> {{ post._source.body | slice:0:215}}...</p>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,34 @@
+.main-div {
+  height:100vh;
+  background: white;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: #333333 40px solid;
+  overflow: hidden;
+}
+
+.input-addon::ng-deep{
+  max-width: 110px;
+  min-width: 110px;
+}
+
+.download-status:hover {
+  cursor:text;
+  text-Decoration: None;
+}
+
+.tag-header {
+  border: 1px solid #ddd;
+  padding: 5px 0px;
+  margin: 0;
+}
+
+.info__select--col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.info__select--button {
+  max-width: 110px;
+  min-width: 110px;
+}

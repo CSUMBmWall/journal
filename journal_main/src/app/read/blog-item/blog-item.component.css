@@ -1,0 +1,16 @@
+.bkground {
+ /* background-image: url("\src\assets\images\stripe-bkgrnd.png");*/
+  background: url("../../../assets/images/stripe-bkgrnd-2.png") repeat-x;
+}
+
+.bkgroundHighlight {
+  /* background-image: url("\src\assets\images\stripe-bkgrnd.png");*/
+  background: url("../../../assets/images/stripe-bkgrnd.png") repeat-x;
+}
+
+p {
+  /*word-break: break-all*/
+  overflow-wrap: break-word;
+}
+
+
