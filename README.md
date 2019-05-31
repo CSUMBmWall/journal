@@ -12,7 +12,7 @@ Bootstrap provides style and functionality.
 
 Elasticsearch is where everything is stored.
 
-Node.js provides read and write capabilities to image files on my computer and serves them up, enables access to the YouTube data API, gathers info from URLs that are inserted, allows downloads of YouTube videos with conversion to MP3, as well as providing the ID3 cabpabilities for downloaded MP3 files.
+Node.js provides read and write capabilities to image files on my computer and serves them up, enables access to the YouTube Data API, gathers info from URLs that are inserted, allows downloads of YouTube videos with conversion to MP3, as well as providing the ID3 cabpabilities for downloaded MP3 files.
 
 ## Write
 
