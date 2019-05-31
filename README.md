@@ -49,10 +49,8 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
 ![YouTube Download](https://user-images.githubusercontent.com/11249870/58671066-1fe24900-82f6-11e9-9c86-1e3aca226f03.JPG)
 
 **Notes  
-  - Database mappings would make it difficult to use what is provided without errors.  
   - API calls, which require a YouTube API account, are used to retrieve YouTube video information
-  - Elasticsearch needs to be running with an index available.  This would be hard to set up without receiving null errors if the proper mappings are not used. 
-  - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.   
-  - The constant ytPassword in journal_server/src/routes/youTubeInfo.ts pulls the password from "YT" environment variable you must set on your machine.  
+  - Elasticsearch needs to be running with an index available.  The proper mappings (schema) are not provided and null errors would result from incomplete records objects. 
+  - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
   - You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
 
