@@ -8,7 +8,7 @@ Writing every day cemented the habit of keeping a journal, but the need for more
 
 I started working with Angular JS on a project at work and decided to try using it for a journal to become more familiar.  I started small with a read and write pane, and slowly added features.  
 
-After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.  Bootstrap provides style and functionality.
+After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.  Bootstrap provides style and functionality.  I had worked with Elasticsearch on an earlier project and decided to use it for the database.  
 
 ## Write
 
