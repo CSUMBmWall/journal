@@ -41,7 +41,6 @@ export class PostDataService implements OnInit {
     this._posts = this.sortByDate(this._posts);
     console.log('add working', Object.assign({}, this._posts));
     this.posts.next(this._posts);
-    // this.posts.next(Array.from(Object.assign({}, this._posts)));
   }
 
   sortByDate(posts) {
