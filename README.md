@@ -6,9 +6,13 @@ The project started with a Jekyll blog template.  Entries were written in Sublim
 
 Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.
 
-I started working with Angular JS on a project at work and decided to try using it for a journal to become more familiar.  I started small with a read and write pane, and slowly added features.  
+I started working with Angular JS on a project at work and decided to try using it for a journal to become more familiar.  I started small with a read and write pane, and slowly added features.  After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.  
 
-After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.  Bootstrap provides style and functionality.  I had worked with Elasticsearch on an earlier project and decided to use it for the database.  
+Bootstrap provides style and functionality.  
+
+Elasticsearch is where everything is stored.
+
+Node.js provides read and write capabilities to image files on my computer and serves them up, enables access to the YouTube data API, gathers info from URLs that are inserted, allows downloads of YouTube videos with conversion to MP3, as well as providing the ID3 cabpabilities for downloaded MP3 files.
 
 ## Write
 
