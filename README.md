@@ -52,5 +52,4 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
   - API calls, which require a YouTube API account, are used to retrieve YouTube video information
   - Elasticsearch needs to be running with an index available.  The proper mappings (schema) are not provided and null errors would result from incomplete records and objects. 
   - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
-  - You can learn more about the YouTube API here ![YouTube Data API](https://developers.google.com/youtube/v3/)
 
