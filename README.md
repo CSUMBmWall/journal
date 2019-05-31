@@ -14,7 +14,7 @@ After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.
 
 The write pane accepts Markdown and has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done the other three).  Also, the weather and current date are inserted into every new blog post.
 
-An selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
+A selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
 
 When inserting a YouTube link, the Node.js server makes a call to  the Google YouTube API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  An iframe was used originally, but the Angular pipe that converts Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
 
