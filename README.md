@@ -24,7 +24,7 @@ When inserting a YouTube link, the Node.js server makes a call to  the Google Yo
 
 The insert URL also hits the Node.js server to grab the title of the page using the Cheerio library and inserts it as a hyperlink.  
 
-The image, YouTube video link and URL hyperlink in the below post were all created using the insert toolbar.
+The image, YouTube video link, and URL hyperlink in the below post were all created using the insert toolbar.
 
 ![Write Screen](https://user-images.githubusercontent.com/11249870/58663572-af313180-82e1-11e9-9055-0cc7668dddef.JPG)
 
