@@ -42,11 +42,13 @@ A Show List button appears at the top of the formatted page to return to the lis
 
 This still needs some polish, but the general functionality works. 
 
-After pasting the YouTube url in the top box, click on the YouTube button and it will retrieve the info from YouTube, including the thumbnail image.  The approach used is to retrieve the description and title from YouTube and separate phrases that could be the artist, title, album, and description.  The information provided is very different for each video and it's hard to get a one size fits all recipe to extract specific elements.  These different phrases are available in the dropdowns to populate the fields and are editable also.
+After pasting the YouTube url in the top box, click on the YouTube button and it will retrieve the info from YouTube, including the thumbnail image.  
+
+I wanted to auto-populate artist, title, and album from the information gathered from YouTube.  The information provided is very different for each video and it's hard to get a one size fits all recipe to extract specific elements.  I ended up running it through various regex filters to remove special characters and create separate phrases from the description and title.  These different phrases are available in the dropdowns to populate the fields and are editable also.
 
 Once you're satisfied with the info and all of the fields are populated, click download.  It will hit the Node.js server, which uses the youtube-dl library to download the video and convert it to MP3. 
 
-The get and set tags use the node-id3 library to read and write ID3 tags to the file that was just saved.  That functionality is a work in progress
+The get and set tags use the node-id3 library to read and write ID3 tags to the MP3 file that was just saved.  That functionality is a work in progress
 
 ![YouTube Download](https://user-images.githubusercontent.com/11249870/58671066-1fe24900-82f6-11e9-9c86-1e3aca226f03.JPG)
 
