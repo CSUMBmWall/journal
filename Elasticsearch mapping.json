@@ -1,0 +1,184 @@
+{
+  "journal": {
+    "mappings": {
+      "journal_entry": {
+        "properties": {
+          "@timestamp": {
+            "type": "date"
+          },
+          "body": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "bookmarked": {
+            "type": "boolean"
+          },
+          "categories": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "date": {
+            "type": "date"
+          },
+          "img": {
+            "type": "text"
+          },
+          "layout": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "markdownBody": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "path": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "strava": {
+            "type": "text"
+          },
+          "tags": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "temp": {
+            "type": "short"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "type": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "urlLink": {
+            "properties": {
+              "thumbnail": {
+                "type": "text"
+              },
+              "title": {
+                "type": "text"
+              },
+              "url": {
+                "type": "text"
+              }
+            }
+          },
+          "weather": {
+            "properties": {
+              "_temp": {
+                "type": "float"
+              },
+              "_weather_type": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "_weather_type_description": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "temp": {
+                "type": "text"
+              },
+              "weather_type": {
+                "type": "text"
+              },
+              "weather_type_description": {
+                "type": "text"
+              }
+            }
+          },
+          "youTube": {
+            "properties": {
+              "description": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "tags": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "thumbnail": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "title": {
+                "type": "text"
+              },
+              "url": {
+                "type": "text"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
