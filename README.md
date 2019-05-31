@@ -20,7 +20,7 @@ The write pane accepts Markdown and has a toolbar to insert hyperlinks for image
 
 A selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
 
-When inserting a YouTube link, the Node.js server makes a call to  the Google YouTube API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  An iframe was used originally, but the Angular pipe that converts Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
+When inserting a YouTube link, the Node.js server makes a call to  the YouTube Data API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  An iframe was used originally, but the Angular pipe that converts Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
 
 The insert URL also hits the Node.js server to grab the title of the page using the Cheerio library and inserts it as a hyperlink.  
 
@@ -48,7 +48,7 @@ This still needs some polish, but the general functionality works.
 
 After pasting the YouTube url in the top box, click on the YouTube button and it will retrieve the info from YouTube, including the thumbnail image.  
 
-I wanted to auto-populate artist, title, and album from the information gathered from YouTube.  What is returned is very different for each video and it's hard to get a one size fits all recipe to extract specific elements.  I ended up running it through various regex filters to remove special characters and create separate phrases from the description and title.  These different phrases are available in the dropdowns to populate the fields.  You can see the phrases that are available under Tags in the screenshot below.  
+I wanted to auto-populate artist, title, and album from the information gathered from the YouTube Data API.  What is returned is very different for each video and it's hard to get a one size fits all recipe to extract specific elements.  I ended up running it through various regex filters to remove special characters and create separate phrases from the description and title.  These different phrases are available in the dropdowns to populate the fields.  You can see the phrases that are available under Tags in the screenshot below.  
 
 Once you're satisfied with the info and all of the fields are populated, click download.  It will hit the Node.js server, which uses the youtube-dl library to download the video and convert it to MP3. 
 
