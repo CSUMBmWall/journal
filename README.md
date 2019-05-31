@@ -1,6 +1,6 @@
 ## Welcome to my journal project!
 
-This is a labor of love, and allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
+This is a labor of love that allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
 
 The project started with a Jekyll blog template.  Entries were written in Sublime text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled as static content and served up by Jekyll.
 
