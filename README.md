@@ -2,7 +2,7 @@
 
 This is a labor of love that allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
 
-The project started with a Jekyll blog template.  Entries were written in Sublime text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled as static content and served up by Jekyll.
+The project started with a Jekyll blog template.  Entries were written in Sublime Text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled as static content and served up by Jekyll.
 
 Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.
 
