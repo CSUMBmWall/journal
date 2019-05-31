@@ -16,7 +16,7 @@ Node.js provides read and write capabilities to image files on my computer and s
 
 ## Write
 
-The write pane accepts Markdown and has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done the other three).  Also, the weather and current date are inserted into every new blog post.
+The write pane accepts Markdown and has a toolbar to insert images, hyperlinks for YouTube videos and articles, and raw HTML (when I can't get it done the other three).  Also, the weather and current date are inserted into every new blog post.
 
 A selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
 
