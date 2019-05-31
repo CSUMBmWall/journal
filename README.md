@@ -24,7 +24,7 @@ The insert URL also hits the Node.js server to grab the title of the page using 
 
 ## Read
 
-The read pane has two layouts.  The first has a list of posts on the left with a paginator at the bottom.  There is also a search box to find text in any post, a bookmarked toggle to select only bookmarked posts, a sort date that will reverse sort, and an alternate view that shows the posts on square cards instead of a list (not quite perfect).  
+The read pane has two layouts.  The first has a list of posts on the left with a paginator at the bottom, and the formatted, selected post from the list on the right.  There is also a search box to find text in any post, a bookmarked toggle to select only bookmarked posts, a sort date that will reverse sort, and an alternate view that shows the posts on square cards instead of a list (not quite perfect).  
 
 There are Edit Post, Delete, and bookmark buttons on the top of the formatted post.  
 
