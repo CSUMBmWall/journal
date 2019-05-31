@@ -6,17 +6,17 @@ The project started with a Jekyll blog template.  Entries were written in Sublim
 
 Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.
 
-I started working with Angular JS on a project at work and decided to try this to become more familiar.  I started small with a read and write pane and slowly added features.  
+I started working with Angular JS on a project at work and decided to try using it for a journal to become more familiar.  I started small with a read and write pane, and slowly added features.  
 
-After Angular 2 came out, I rewrote everything, and upgraded again when Angular 5 came out.  I'm using Bootstrap for style and functionality.
+After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.  Bootstrap provides style and functionality.
 
 ## Write
 
-The write pane accepts Markdown and has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done with those three).  Also, the weather and current date are inserted into every new blog post.
+The write pane accepts Markdown and has a toolbar to insert hyperlinks for images, YouTube videos, links to articles, and raw HTML (when I can't get it done the other three).  Also, the weather and current date are inserted into every new blog post.
 
-When I choose an image to insert from my computer, it hits the Node.js server that uploads it to a folder and then serves it up locally.
+An selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
 
-When inserting a YouTube link, the Node.js server makes a call to  the Google YouTube API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  I tried using an iframe, but the Angular pipe used to convert Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
+When inserting a YouTube link, the Node.js server makes a call to  the Google YouTube API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  An iframe was used originally, but the Angular pipe that converts Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
 
 The insert URL also hits the Node.js server to grab the title of the page using the Cheerio library and inserts it as a hyperlink.  
 
