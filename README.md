@@ -4,9 +4,9 @@ This is a tool I have built that helps me express myself, and allows me to have 
 
 The project started with a Jekyll blog template.  Entries were written in Sublime Text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled to a static html page and served up by Jekyll.
 
-Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.
+Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.  I looked under the hood of Jekyll and was introduced to templating and the possibility of using variables inside html.  
 
-I started working with Angular JS on a project at work, and decided to try using it for a journal, to become more familiar.  I started small with a read and write pane, and slowly added features.  After Angular 2 came out, I rewrote everything (Typescript is great!), and upgraded again to Angular 5.  
+I started working with Angular JS on a project at work, and decided to try using it for a journal, to become more familiar.  I started small with a read and write pane, and slowly added features.  After Angular 2 came out, I rewrote everything , with the wonderful help of Typescript, and upgraded again to Angular 5.
 
 Bootstrap provides style and functionality.  
 
@@ -50,7 +50,7 @@ After pasting the YouTube url in the top box, click on the YouTube button and it
 
 I wanted to auto-populate artist, title, and album from the information gathered from the YouTube Data API.  What is returned is very different for each video and it's hard to get a one size fits all recipe to extract specific elements.  I ended up running it through various regex filters to remove special characters and create separate phrases from the description and title.  These different phrases are available in the dropdowns to populate the fields.  You can see the phrases that are available under Tags in the screenshot below.  
 
-Once you're satisfied with the info and all of the fields are populated, click download.  It will hit the Node.js server, which uses the youtube-dl library to download the video and convert it to MP3. 
+Once you're satisfied with the info and all of the fields are populated, click download.  It will hit the Node.js server, which uses the youtube-dl library to download the video and FFmpeg to convert it to MP3. 
 
 The get and set tags use the node-id3 library to read and write ID3 tags to the MP3 file that was just saved.  That functionality is a work in progress
 
