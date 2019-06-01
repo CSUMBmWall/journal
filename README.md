@@ -1,8 +1,8 @@
-## Welcome to my journal project!
+## Welcome to My Life's Blog!
 
-This is a labor of love that allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
+This is a tool I have built that helps me express myself, and allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
 
-The project started with a Jekyll blog template.  Entries were written in Sublime Text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled as static content and served up by Jekyll.
+The project started with a Jekyll blog template.  Entries were written in Sublime Text with "front matter" that included the title, date, and category of the blog post.  After saving it to the posts folder, it would be compiled to a static html page and served up by Jekyll.
 
 Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.
 
@@ -56,8 +56,12 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
 
 ![YouTube Download](https://user-images.githubusercontent.com/11249870/58671066-1fe24900-82f6-11e9-9c86-1e3aca226f03.JPG)
 
-**Notes  
+#### *Notes*  
   - API calls, which require a YouTube API account, are used to retrieve YouTube video information
   - Elasticsearch needs to be running with an index available.  The mapping I use is in Elasticsearch mapping.json in the root folder of this repo.  The index is journal and the type is journal_entry.
   - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
-
+  
+####*Credits*
+ - I cannot thank  Maximilian Schwarzmüller enough.  His in depth courses on Angular JS and Angular showed me so much, including coding best practices, and how to really use Bootstrap.  I learned about React, Typescript, Javascript, CDNs, you name it.  It's all in his tutorials.
+    - ![Academind]( https://academind.com/)
+    - ![Angular course on Udemy](https://www.udemy.com/the-complete-guide-to-angular-2/)
