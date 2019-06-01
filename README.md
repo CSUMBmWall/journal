@@ -62,7 +62,7 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
   - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
   
 #### *Credits*
- - I cannot thank  Maximilian Schwarzmüller enough.  His in depth courses on Angular JS and Angular showed me so much, including coding best practices, and how to really use Bootstrap.  I learned about React, Typescript, Javascript, CDNs, you name it.  It's all in his tutorials.
+ - I cannot thank  Maximilian Schwarzmüller enough.  His in depth courses on Angular JS and Angular showed me so much, including coding best practices, and how to really use Bootstrap.  I learned about React, Typescript, Javascript, CDNs, building a restful API with node.js, you name it.  It's all in his tutorials.
    - <a href="https://academind.com" target="_blank">Academind Website</a>
    - <a href="https://www.udemy.com/the-complete-guide-to-angular-2/" target="_blank">Academind on Udemy: Angular 8 Course</a>
    - <a href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w" target="_blank">  Academind YouTube Channel</a>
