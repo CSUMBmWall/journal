@@ -1,4 +1,4 @@
-## Welcome to My Life's Blog!
+## Welcome to Electronic Journal
 
 This is a tool I have built that helps me express myself, and allows me to have a private journal that exists nowhere else but my own computer.  I can write about my day with easy Markdown formatting, as well as save and comment on YouTube videos, pictures I've taken, and articles I've read.
 
