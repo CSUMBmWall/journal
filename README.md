@@ -61,7 +61,7 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
   - Elasticsearch needs to be running with an index available.  The mapping I use is in Elasticsearch mapping.json in the root folder of this repo.  The index is journal and the type is journal_entry.
   - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
   
-####*Credits*
+#### *Credits*
  - I cannot thank  Maximilian Schwarzmüller enough.  His in depth courses on Angular JS and Angular showed me so much, including coding best practices, and how to really use Bootstrap.  I learned about React, Typescript, Javascript, CDNs, you name it.  It's all in his tutorials.
     - ![Academind]( https://academind.com/)
     - ![Angular course on Udemy](https://www.udemy.com/the-complete-guide-to-angular-2/)
