@@ -7,19 +7,12 @@ import {FilePathService} from './filePath.service';
   styleUrls: ['./insert.component.css']
 })
 export class InsertComponent implements OnInit {
-
-/*
-  constructor(private filePathService: FilePathService) { }
-*/
   constructor() { }
 
   ngOnInit() {
   }
 
   insertImageLink(fileLoc) {
-    // console.log(path.dirname(imgLoc.value));
-
-    // this.filePathService.getFilePath(fileLoc);
 
     const root = "C:\\fakepath\\";
     var imgTag = 'File Not Found\n';
@@ -27,7 +20,6 @@ export class InsertComponent implements OnInit {
       const fileName = fileLoc.value.replace(root, '');
       imgTag = '<img src="assets\\images\\' + fileName + '" height="350px">\n';
     }
-    // this.post.body.body += imgTag;
   }
 
 }

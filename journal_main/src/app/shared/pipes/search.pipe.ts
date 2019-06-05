@@ -9,13 +9,7 @@ export class SearchPipe implements PipeTransform {
     if (!items) { return []; }
     if (!value) { return items; }
 
-    // value = value.toLowerCase();
-    // console.log(items);
-
-
-
     function filterBySearch(post) {
-      // console.log(post._source.body);
       var lowerBody, lowerTitle = '';
       if (post._source.body !== undefined) {
         lowerBody = post._source.body.toLocaleLowerCase();
@@ -29,20 +23,7 @@ export class SearchPipe implements PipeTransform {
       }
       return false;
     }
-/*
-    function filterBySearch(post) {
-     console.log(post._source.body);
-    }*/
-
     return items.filter(filterBySearch);
-
-    // console.log('filtered', filteredArray);
-
-
-/*
-    return items.filter(it => it[field] === value);
-*/
-    // return items.filter(it => it[field].toLowerCase().includes(value));
   }
 
 }

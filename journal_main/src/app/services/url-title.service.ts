@@ -8,9 +8,6 @@ export class UrlTitleService {
   constructor(private http: HttpClient) { }
 
   public getTitle(url) {
-    /*let httpParams = new HttpParams();
-    httpParams = httpParams.append('url', url);
-    console.log(httpParams);*/
     return this.http
       .post<any>(this.downloadURL, { url: url});
   }

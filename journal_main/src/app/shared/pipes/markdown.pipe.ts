@@ -27,35 +27,3 @@ export class MarkdownPipe implements PipeTransform {
   }
 
 }
-
-
-/*
-import { Pipe, PipeTransform } from '@angular/core';
-import { markdown } from 'markdown';
-// import { showdown } from 'showdown';
-import {Converter} from "showdown/dist/showdown";
-
-@Pipe({
-  name: 'markdownPipe'
-})
-export class MarkdownPipe implements PipeTransform {
-
-  transform(value: any, args?: any): any {
-    var converter = new Converter();
-    converter.setOption('openLinksInNewWindow', true);
-    /!*var defaultOptions = converter.getOptions();
-    console.log('pipe', defaultOptions);*!/
-
-    return converter.makeHtml(value);
-    // converter.makeHtml(this.post.body.body);
-    /!*const converter = new showdown.Converter();
-    const html = converter.makeHtml(value);
-    console.log(html);
-    return converter.makeHtml(value);*!/
-
-
-
-  }
-
-}
-*/

@@ -29,7 +29,6 @@ export class PostDatabaseService implements OnInit {
     if (!this._client) {
       this._connect();
     }
-    // this.getAllPosts();
   }
 
   ngOnInit() {
@@ -44,14 +43,10 @@ export class PostDatabaseService implements OnInit {
       .then((resp, error) => {
         if (resp.created) {
           this.postDataService.workingPostID.next(resp._id);
-          // this._client.indices.refresh();
-          // this.getAllPostsDelayed();
           this.esSuccess.emit('Record Created');
           this.postStatus.emit('Post "' + post.body.title + '" ' + resp.result);
 
           post.id = resp._id;
-          /*this.postDataService.addWorkingPost(post);
-          console.log('record created');*/
           this.getAllPostsDelayed();
         } else {
           console.log('savePost Error', error);
@@ -67,7 +62,6 @@ export class PostDatabaseService implements OnInit {
   private _connect() {
     this._client = new Client({
       host: 'http://localhost:9200',
-      // log: 'trace'
     });
   }
 
@@ -87,7 +81,6 @@ export class PostDatabaseService implements OnInit {
   }
 
   getAllPosts(index?: string): any {
-    /*this._client.indices.refresh();*/
     if (index) { this.currentESIndex = index; }
     return this._client.search({
       index: this.currentESIndex,
@@ -197,10 +190,6 @@ export class PostDatabaseService implements OnInit {
         this.currentESIndex = firstIndex;
         this.postDataService.selectedIndex.next(firstIndex);
 
-        // this.postDataService.esIndices.next(esIndices);
-        /*for (var data in indices) {
-          console.log('index ', data;
-        }*/
       })
       .catch(err => console.error(`Error connecting to the es client: ${err}`));
   }
