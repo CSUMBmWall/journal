@@ -59,6 +59,7 @@ The get and set tags use the node-id3 library to read and write ID3 tags to the 
 #### *Notes*  
   - API calls, which require a YouTube API account, are used to retrieve YouTube video information
   - Elasticsearch needs to be running with an index available.  The mapping is in elasticsearch_mapping.json, in the root folder of this repo.  The index is journal and the type is journal_entry.
+   - The mapping will not work for Elasticsearch version 7.0 and later.  They have removed index types.  
   - The Node.js server must be running to add images, retrieve URL and YouTube info, or download YouTube videos.  
   
 #### *Credits*
