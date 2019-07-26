@@ -6,7 +6,7 @@ The project started with a Jekyll blog template.  Entries were written in Sublim
 
 Writing every day cemented the habit of keeping a journal, but the need for more control and a better way to enter, edit, and read posts could not be ignored.  I looked under the hood of Jekyll and was introduced to templating and the possibility of using variables inside html.  
 
-I started working with Angular JS on a project at work, and decided to try using it for a journal, to become more familiar.  I started small with a read and write pane, and slowly added features.  After Angular 2 came out, I rewrote everything , with the wonderful help of Typescript, and upgraded again to Angular 5.
+I started working with Angular JS on a project at work, and decided to try using it for a journal, to become more familiar.  I started small with a read and write pane, and slowly added features.  After Angular 2 came out, I rewrote everything, and upgraded again to Angular 5.
 
 Bootstrap provides style and functionality.  
 
