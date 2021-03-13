@@ -20,7 +20,7 @@ The write pane accepts Markdown and has a toolbar to insert images, hyperlinks f
 
 A selected image from the computer hits the Node.js server that uploads it to a folder, and then serves it up locally.
 
-When inserting a YouTube link, the Node.js server makes a call to  the YouTube Data API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  An iframe was used originally, but the Angular pipe that converts Markdown reloads the iframe image every time a character is typed in the edit pane, and it gets on my nerves.  
+When inserting a YouTube link, the Node.js server makes a call to  the YouTube Data API that grabs the title and a thumbnail image, and inserts that as a hyperlink.  
 
 The insert URL also hits the Node.js server to grab the title of the page using the Cheerio library and inserts it as a hyperlink.  
 
